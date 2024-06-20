@@ -7,7 +7,10 @@ export default {
         ghostwhite : '#f4f8fb',
         primary: '#377292',
         // primary: '#2b85ff',
-        secondary: '#ef863e'
+        secondary: '#ef863e',
+        iceblue: '#e8f0f6',
+        color1: '#cbdfec',
+        hovercolor: '#0e70bb'
       },
     },
   },
