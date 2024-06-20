@@ -8,7 +8,7 @@ import axiosInstance from '../../utils/axiosInstance';
 
 
 const Login = () => {
-  const [email, setEmail] = useState("");
+const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [error, setError] = useState(null);
 
@@ -32,7 +32,7 @@ const handleLogin = async (e) => {
 
   //login api call
   try{
-    const response = await axiosInstance.post("./login",{
+    const response = await axiosInstance.post("/login",{
       email: email,
       password: password,
     });
@@ -47,7 +47,7 @@ const handleLogin = async (e) => {
     if(error.response && error.response.data && error.response.data.message){
       setError(error.response.data.message);
     } else {
-      setError("An unexpected error occured. Pleas try again.");
+      setError("An unexpected error occured. Please try again.");
     }
   }
 
