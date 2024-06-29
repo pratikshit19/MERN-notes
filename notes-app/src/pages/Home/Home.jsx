@@ -172,7 +172,6 @@ const Home = () => {
           />
         )}
       </div>
-
       <button
         className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-black hover:bg-primary cursor-pointer fixed right-7 bottom-7 sm:right-10 sm:bottom-10"
         onClick={() => {
