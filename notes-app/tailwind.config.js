@@ -5,12 +5,12 @@ export default {
     extend: {
       colors:{
         ghostwhite : '#f4f8fb',
-        primary: '#377292',
+        primary: '#467a83',
         // primary: '#2b85ff',
         secondary: '#ef863e',
         iceblue: '#e8f0f6',
-        color1: '#83a4d4',
-        color2: '#16BFFD',
+        color1: '#d1e3e6',
+        color2: '#eaf2f4',
         hovercolor: '#0e70bb'
       },
     },
