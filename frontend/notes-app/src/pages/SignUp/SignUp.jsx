@@ -66,15 +66,15 @@ const [error, setError] = useState(null);
     <>
     
 
-    <div className='flex items-center mt-28 justify-center'>
-      <div className='lg:w-96 sm:w-64 border rounded-3xl px-7 py-10 bg-white'>
+    <div className='flex items-center mt-28 justify-center px-8'>
+      <div className='lg:w-96 sm:w-64 border rounded-3xl px-7 py-10 bg-white/90'>
         <form onSubmit={handleSignUp}>
           <h4 className='text-2xl mb-7 text-center'>Sign Up</h4>
 
           <input 
           type='text' 
           placeholder='Name' 
-          className='input-box'
+          className='input-box bg-white'
           value={name}
           onChange={(e) => setName(e.target.value)}
           />
@@ -82,7 +82,7 @@ const [error, setError] = useState(null);
           <input 
           type='text' 
           placeholder='Email' 
-          className='input-box'
+          className='input-box bg-white'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           />

@@ -146,7 +146,7 @@ const Home = () => {
     <>
       <Navbar userInfo={userInfo} onSearchNote={onSearchNote} handleClearSearch={handleClearSearch} />
 
-      <div className="container px-8 md:px-8 mt-8 mx-auto">
+      <div className="container px-6 md:px-8 mt-8 mx-auto">
         {allNotes.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {allNotes.map((item, index) => (
@@ -173,17 +173,22 @@ const Home = () => {
         )}
       </div>
       <button
-        className=" btn-primary w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl hover:bg-color1 cursor-pointer fixed right-7 bottom-7 sm:right-10 sm:bottom-10"
-        onClick={() => {
-          setOpenAddEditModal({
-            isShown: true,
-            type: 'add',
-            data: null,
-          });
-        }}
-      >
-        <MdAdd className="text-3xl sm:text-4xl text-white" />
-      </button>
+  className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-gradient-to-r from-color1 to-color2 hover:from-color2 hover:to-color1 cursor-pointer fixed right-7 bottom-7 sm:right-10 sm:bottom-10"
+  onClick={() => {
+    setOpenAddEditModal({
+      isShown: true,
+      type: 'add',
+      data: null,
+    });
+  }}
+>
+  <MdAdd size={36} className="text-white sm:size-36" />
+</button>
+
+
+
+
+
 
       <Modal
         isOpen={openAddEditModal.isShown}

@@ -4,10 +4,10 @@ import { MdOutlinePushPin, MdCreate, MdDelete } from 'react-icons/md';
 
 const NoteCard = ({title, date, content, tags, isPinned, onEdit, onDelete, onPinNote}) => {
   return (
-    <div className='border-[1.5px] rounded-2xl p-4 bg-white hover:shadow-xl transition-all ease-in-out'>
+    <div className='rounded-xl p-4 bg-[#2a3046] hover:shadow-xl transition-all ease-in-out'>
         <div className='flex items-center justify-between'>
             <div>
-                <h6 className='text-sm font-medium'>{title}</h6>
+                <h4 className='text-white text-lg font-normal'>{title}</h4>
                 <span className='text-xs text-slate-400'>{moment(date).format('Do MMM YYYY')}</span>
             </div>
 
