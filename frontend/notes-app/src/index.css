@@ -15,8 +15,8 @@
   body{
     overflow-x: hidden;
     /* background-color: #f8f8ff; */
-    /* background-color: #e8f0f6; */
-    @apply bg-gradient-to-l from-color1 via-color2 to-color1;
+    background-color: #F1EFEF;
+    /* @apply bg-gradient-to-l from-color1 via-color2 to-color1; */
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   .btn-primary{
-    @apply w-full text-sm bg-black text-white px-5 py-3 rounded-xl hover:bg-primary;
+    @apply w-full text-sm bg-gradient-to-r from-color1 to-color2 text-white px-5 py-3 rounded-xl hover:bg-color1;
   }
 
   .icon-btn{

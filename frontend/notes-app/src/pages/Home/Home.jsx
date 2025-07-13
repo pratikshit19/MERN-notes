@@ -173,7 +173,7 @@ const Home = () => {
         )}
       </div>
       <button
-        className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-black hover:bg-primary cursor-pointer fixed right-7 bottom-7 sm:right-10 sm:bottom-10"
+        className=" btn-primary w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl hover:bg-color1 cursor-pointer fixed right-7 bottom-7 sm:right-10 sm:bottom-10"
         onClick={() => {
           setOpenAddEditModal({
             isShown: true,
@@ -182,7 +182,7 @@ const Home = () => {
           });
         }}
       >
-        <MdAdd className="text-2xl sm:text-3xl text-white" />
+        <MdAdd className="text-3xl sm:text-4xl text-white" />
       </button>
 
       <Modal
