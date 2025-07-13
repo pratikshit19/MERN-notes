@@ -1,1 +1,0 @@
-export const BASE_URL = "https://mern-notes-i4yp.onrender.com";
