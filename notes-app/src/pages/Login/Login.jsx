@@ -60,7 +60,7 @@ const handleLogin = async (e) => {
     
 
     <div className='flex items-center mt-28 justify-center'>
-      <div className='w-96 border rounded-3xl px-7 py-10 bg-white'>
+      <div className='lg:w-96 sm:w-64 border rounded-3xl px-7 py-10 bg-white'>
 
         <form onSubmit={handleLogin}>
           <h4 className='text-2xl mb-7 text-center'>Login</h4>
