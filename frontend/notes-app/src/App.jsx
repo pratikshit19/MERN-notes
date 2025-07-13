@@ -8,7 +8,7 @@ import Onboarding from "./pages/Onboarding/Onboarding";
 const routes = (
   <Router>
     <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Onboarding />} />
       <Route path="/dashboard" exact element={<Home />} />
       <Route path="/login" exact element={<Login />} />
       <Route path="/create-account" element={<SignUp />} />
