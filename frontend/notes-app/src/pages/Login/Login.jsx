@@ -57,7 +57,7 @@ const handleLogin = async (e) => {
 
   return (
     <>
-    <div className='flex items-center mt-28 justify-center px-8'>
+    <div className='min-h-screen flex items-center mt-4 justify-center px-7'>
       <div className='lg:w-96 sm:w-64 border rounded-3xl px-7 py-10 bg-white/90'>
 
         <form onSubmit={handleLogin}>
