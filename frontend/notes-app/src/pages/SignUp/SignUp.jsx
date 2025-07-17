@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PasswordInput from '../../components/Input/PasswordInput';
 import { validateEmail } from '../../utils/helper';
@@ -10,6 +10,10 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSignUp = async (e) => {
     e.preventDefault();
@@ -57,16 +61,16 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-tr from-color1 to-color2">
-      <div className="text-center py-16 text-white">
-        <h1 className="lg:text-4xl text-xl font-bold tracking-wide">MERN Notes App</h1>
-        <p className="mt-2 text-sm font-light">Add Notes • Track Progress • Repeat</p>
+    <div className="min-h-screen flex flex-col bg-gradient-to-tr from-color1 to-color2">
+      <div className="text-center py-12 text-white">
+        <h1 className="text-3xl font-bold">MERN Notes App</h1>
+        <p className="mt-1 text-sm font-light">Add Notes • Track Progress • Repeat</p>
       </div>
 
-      <div className="bg-white rounded-t-[40px] p-8 shadow-2xl w-full max-w-md mx-auto flex-1">
-        <h2 className="text-2xl font-semibold text-center mb-6">Create an Account</h2>
+      <div className="flex-grow bg-white rounded-t-3xl p-6 shadow-2xl max-w-md mx-auto w-full">
+        <h2 className="text-xl font-semibold text-center mb-5">Create an Account</h2>
 
-        <form onSubmit={handleSignUp} className="space-y-5">
+        <form onSubmit={handleSignUp} className="space-y-4">
           <input
             type="text"
             placeholder="Full Name"

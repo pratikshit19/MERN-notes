@@ -1,33 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Onboarding = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="h-screen flex flex-col justify-between bg-gradient-to-br from-color1 to-color2 relative overflow-hidden">
-      {/* Top abstract design + logo */}
-      <div className="relative z-10 px-6 pt-16 text-white text-center">
+    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-br from-color1 to-color2">
+      {/* Header */}
+      <div className="px-6 pt-16 text-white text-center">
         <h1 className="text-4xl font-bold">Take Notes!</h1>
         <p className="text-sm mt-2 tracking-widest">By Pratikshit Kumar</p>
       </div>
 
-      {/* Abstract SVG wave */}
-      {/* <div className="absolute top-0 left-0 right-0 h-80">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          className="w-full h-full"
-        >
-          <path
-            d="M0.00,49.98 C149.99,150.00 349.99,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style={{ stroke: "none", fill: "white" }}
-          ></path>
-        </svg>
-      </div> */}
-
       {/* White bottom section */}
-      <div className="z-10 bg-white rounded-t-3xl p-6 text-center">
+      <div className="bg-white rounded-t-3xl p-6 text-center">
         <div className="flex justify-center mb-4">
           <img
             src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
