@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const EmptyCard = ({imgSrc, message}) => {
+const EmptyCard = ({ imgSrc, message }) => {
   return (
-    <div className='flex flex-col items-center justify-center mt-20'>
-        <img src={imgSrc} alt='No notes' className='w-60 opacity-25' />
-        <p className='w-1/2 text-sm font-medium text-slate-700 text-center leading-7 mt-5' >
+    <div className="flex flex-col items-center justify-center mt-20 text-white">
+      <img src={imgSrc} alt="No notes" className="w-48 opacity-20 mb-6" />
+      <p className="w-2/3 text-sm font-light text-center leading-6">
         {message}
-        </p>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default EmptyCard
+export default EmptyCard;

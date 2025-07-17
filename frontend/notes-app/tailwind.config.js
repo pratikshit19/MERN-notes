@@ -10,7 +10,7 @@ export default {
         secondary: '#ef863e',
         iceblue: '#e8f0f6',
         color1: '#000000',
-        color2: '#003366',
+        color2: '#1b2137',
         hovercolor: '#0e70bb'
       },
     },
