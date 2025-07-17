@@ -49,13 +49,13 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-tr from-color1 to-color2">
+    <section className="min-h-screen flex flex-col bg-gradient-to-tr from-color1 to-color2">
       <div className="text-center py-12 text-white">
         <h1 className="text-3xl font-bold">MERN Notes App</h1>
         <p className="mt-1 text-sm font-light">Add Notes • Track Progress • Repeat</p>
       </div>
 
-      <div className="flex-grow bg-white rounded-t-3xl p-6 shadow-2xl max-w-md mx-auto w-full mt-44">
+      <div className="flex-grow bg-white rounded-t-3xl p-6 shadow-2xl max-w-md mx-auto w-full mt-36">
         <h2 className="text-xl font-semibold text-center mb-5">Login to Your Account</h2>
 
         <form onSubmit={handleLogin} className="space-y-4">
@@ -90,7 +90,7 @@ const Login = () => {
           </Link>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
