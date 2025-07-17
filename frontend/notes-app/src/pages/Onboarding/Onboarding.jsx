@@ -5,7 +5,7 @@ const Onboarding = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-br from-color1 to-color2 relative overflow-hidden">
+    <div className="h-screen flex flex-col justify-between bg-gradient-to-br from-color1 to-color2 relative overflow-hidden">
       {/* Top abstract design + logo */}
       <div className="relative z-10 px-6 pt-16 text-white text-center">
         <h1 className="text-4xl font-bold">Take Notes!</h1>

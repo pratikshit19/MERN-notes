@@ -57,7 +57,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-color1 to-color2">
+    <div className="h-screen flex flex-col bg-gradient-to-tr from-color1 to-color2">
       <div className="text-center py-16 text-white">
         <h1 className="lg:text-4xl text-xl font-bold tracking-wide">MERN Notes App</h1>
         <p className="mt-2 text-sm font-light">Add Notes • Track Progress • Repeat</p>
