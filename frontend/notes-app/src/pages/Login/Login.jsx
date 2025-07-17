@@ -55,7 +55,7 @@ const Login = () => {
         <p className="mt-1 text-sm font-light">Add Notes • Track Progress • Repeat</p>
       </div>
 
-      <div className="flex-grow bg-white rounded-t-3xl p-6 shadow-2xl max-w-md mx-auto w-full">
+      <div className="flex-grow bg-white rounded-t-3xl p-6 shadow-2xl max-w-md mx-auto w-full mt-44">
         <h2 className="text-xl font-semibold text-center mb-5">Login to Your Account</h2>
 
         <form onSubmit={handleLogin} className="space-y-4">

@@ -17,7 +17,7 @@ const Onboarding = () => {
       </div>
 
       {/* White bottom section */}
-      <div className="bg-white rounded-t-3xl p-6 text-center">
+      <div className="flex-grow bg-white rounded-t-3xl p-6 text-center mt-44">
         <div className="flex justify-center mb-4">
           <img
             src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
